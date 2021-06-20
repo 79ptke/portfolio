@@ -39,6 +39,16 @@ a {
 
 /*스타일*/
 
+
+
+header {
+    display: none;
+}
+
+
+
+
+
 /*----------------------------------#section0 .main-visual----------------------------------------------- */
 
 #section0 {
@@ -167,7 +177,7 @@ svg.title {
 }
 
 svg.title text {
-    font-family: 'Fredoka One';
+    font-family: 'Fredoka One', cursive;
     font-size: 10vw;
     fill: transparent;
     stroke-dasharray: 326px;
@@ -250,20 +260,20 @@ svg text:nth-child(9) {
     height: 100%;
 }
 
-.info-page > header {
+.info-page > .header {
     width: 100%;
     height: 110px;
     z-index: 9;
 }
 
-.info-page > header > .gnb {
+.info-page > .header > .gnb {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
 }
 
-.info-page > header > .gnb > .logo-wrap {
+.info-page > .header > .gnb > .logo-wrap {
     width: 80px;
     height: 80px;
     background-image: url(../img/logo.png);
@@ -284,11 +294,11 @@ svg text:nth-child(9) {
     }
 }
 
-.info-page > header > .gnb > .nav-list {
+.info-page > .header > .gnb > .nav-list {
     margin-left: auto;
 }
 
-.info-page > header > .gnb > .nav-list > ul {
+.info-page > .header > .gnb > .nav-list > ul {
     display: flex;
     font-size: 15px;
     font-weight: 700;
@@ -296,19 +306,19 @@ svg text:nth-child(9) {
     text-transform: uppercase;
 }
 
-.info-page > header > .gnb > .nav-list > ul > li {
+.info-page > .header > .gnb > .nav-list > ul > li {
     padding: 0 60px;
 }
 
-.info-page > header > .gnb > .nav-list > ul > li:last-child {
+.info-page > .header > .gnb > .nav-list > ul > li:last-child {
     padding-right: 0;
 }
 
-.info-page > header > .gnb > .nav-list > ul > li:hover {
+.info-page > .header > .gnb > .nav-list > ul > li:hover {
     color: #F5A518;
 }
 
-.info-page > header > .gnb > .nav-list > ul > li > a::after {
+.info-page > .header > .gnb > .nav-list > ul > li > a::after {
     content: "";
     display: block;
     width: 0%;
@@ -317,7 +327,7 @@ svg text:nth-child(9) {
     opacity: 0;
 }
 
-.info-page > header > .gnb > .nav-list > ul > li:hover > a::after {
+.info-page > .header > .gnb > .nav-list > ul > li:hover > a::after {
     width: 100%;
     opacity: 1;
 }
@@ -1353,7 +1363,7 @@ footer > p {
 
     /*sec01*/
 
-    .info-page > header > .gnb {
+    .info-page > .header > .gnb {
         padding: 0 60px;
     }
 
@@ -1413,12 +1423,86 @@ footer > p {
 
 
 @media screen and (max-width: 960px) {
+    
+     
+    header {
+        display: block;
+    }
+
+    header > .mobile-gnb {
+        position: fixed;
+        bottom: -50px;
+        width: 100%;
+        height: 110px;
+        z-index: 99;
+    }
+    
+    header > .mobile-gnb.active {
+        bottom: 0;
+    }
+
+    header > .mobile-gnb > .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/mobile-menu.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header > .mobile-gnb > .mobile-menu > .logo-wrap {
+        width: 80px;
+        height: 80px;
+        background-image: url(../img/logo2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: rotate 3s linear infinite;
+    }
+
+    @keyframes rotate {
+
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    header > .mobile-gnb > .mobile-menu > .nav-list {
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    header > .mobile-gnb > .mobile-menu > .nav-list > ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+    }
+
+    
+    
+    
+    
     .wave {
         width: 450%;
     }
 
     /*title svg 시작*/
-    
+
     .text-box {
         display: none;
     }
@@ -1435,7 +1519,7 @@ footer > p {
         width: 75vw;
         height: 100vh;
     }
-    
+
     svg.title {
         display: block;
         width: 100%;
@@ -1526,10 +1610,10 @@ footer > p {
         overflow: hidden;
     }
 
-    .info-page > header {
+    .info-page > .header > .gnb {
         display: none;
     }
-
+   
     .info-page > .contents {
         width: 100%;
         height: 100%;
@@ -1806,11 +1890,6 @@ footer > p {
         padding: 40px;
     }
 
-
-
-
-
-
 }
 
 
@@ -1886,7 +1965,7 @@ footer > p {
     .wave {
         width: 650%;
     }
-    
+
     /*title svg 시작*/
 
     @keyframes title {
