@@ -314,8 +314,7 @@ $(document).ready(function () {
     //모바일 메뉴 토글
     
      $("header > .mobile-gnb").click(function () {
-
-        $("header > .mobile-gnb").toggleClassClass("active");
+        $("header > .mobile-gnb").toggleClass("active");
 
 
 
