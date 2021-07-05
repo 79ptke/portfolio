@@ -43,17 +43,11 @@ a {
 
 /*스타일*/
 
-
-
 header {
     display: none;
 }
 
-
-
-
-
-/*----------------------------------#section0 .main-visual----------------------------------------------- */
+/*=====================================#section0 .main-visual============================================*/
 
 #section0 {
     position: relative;
@@ -72,7 +66,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 /*wave svg 시작*/
 .wave-wrap {
@@ -257,7 +250,7 @@ svg text:nth-child(9) {
 
 /*title svg 끝*/
 
-/*------------------------------------#section1 .info-page-------------------------------------------------- */
+/*============================================#section1 .info-page=====================================================*/
 
 .info-page {
     width: 100%;
@@ -427,7 +420,7 @@ svg text:nth-child(9) {
     background-size: cover;
 }
 
-/*------------------------------------#section2 .info-page02------------------------------------------------- */
+/*======================================#section2 .info-page02================================================*/
 
 .info-page02 {
     width: 100%;
@@ -629,7 +622,7 @@ svg text:nth-child(9) {
     }
 }
 
-/*----------------------------------#section3 .portfolio-page----------------------------------------------- */
+/*========================================#section3 .portfolio-page===============================================*/
 
 .portfolio-page {
     width: 100%;
@@ -792,22 +785,18 @@ svg text:nth-child(9) {
     width: 35%;
     height: 80%;
     padding: 60px 40px 60px 0;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 
 .portfolio-page > .contents > .swiper-container > .swiper-wrapper > .swiper-slide > .pf-box > .txt-box > h2 {
     font-size: 1.5em;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-
 }
 
 .portfolio-page > .contents > .swiper-container > .swiper-wrapper > .swiper-slide > .pf-box > .txt-box > h1 {
     font-size: 3.5em;
     font-weight: 900;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-
 }
 
 .portfolio-page > .contents > .swiper-container > .swiper-wrapper > .swiper-slide > .pf-box > .txt-box > p {
@@ -816,7 +805,6 @@ svg text:nth-child(9) {
     font-weight: 500;
     font-family: 'Noto Sans KR', sans-serif;
     text-transform: uppercase;
-
 }
 
 .portfolio-page > .contents > .swiper-container > .swiper-wrapper > .swiper-slide > .pf-box > .txt-box > .btn-wrap {
@@ -842,7 +830,6 @@ svg text:nth-child(9) {
     background-color: #000;
     color: #fff;
 }
-
 
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
@@ -893,7 +880,7 @@ svg text:nth-child(9) {
     background-size: cover;
 }
 
-/*---------------------------------#section4 .portfolio-page02----------------------------------------------- */
+/*==========================================#section4 .portfolio-page02=================================================*/
 
 #section4 {
     position: relative;
@@ -954,62 +941,41 @@ svg text:nth-child(9) {
 .portfolio-page02 > .contents > .main-con > .main-box > .main {
     width: 100%;
     height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .portfolio-page02 > .contents > .main-con > .main-box > .main01 {
     background-image: url(../img/mobile-01-retinalcream.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .portfolio-page02 > .contents > .main-con > .main-box > .main02 {
     background-image: url(../img/mobile-02-jujube.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .portfolio-page02 > .contents > .main-con > .main-box > .main03 {
     background-image: url(../img/mobile-03-dimsum.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .portfolio-page02 > .contents > .main-con > .main-box > .main04 {
     background-image: url(../img/mobile-04-muse.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .portfolio-page02 > .contents > .main-con > .main-box > .main05 {
-    background-image: url(../img/mobile-05-coffee.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../img/mobile-05-summer.jpg);
 }
 
 .portfolio-page02 > .contents > .main-con > .main-box > .main06 {
     background-image: url(../img/mobile-06-her.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .portfolio-page02 > .contents > .main-con > .main-box > .main07 {
     background-image: url(../img/mobile-07-ssack3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .portfolio-page02 > .contents > .main-con > .main-box > .main08 {
     background-image: url(../img/mobile-08-c4d.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .portfolio-page02 > .contents > .main-con > .main-box > .main > .txt-box {
@@ -1047,13 +1013,14 @@ svg text:nth-child(9) {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
+    z-index: 99;
 }
 
 .img-pop-wrap.pop {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
 }
 
 .img-pop-wrap > .img-pop {
@@ -1072,13 +1039,13 @@ svg text:nth-child(9) {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
 }
 
 .img-pop-wrap > .img-pop > .img-box.pop {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
 }
 
 .img-pop-wrap > .img-pop > .box01 {
@@ -1098,7 +1065,7 @@ svg text:nth-child(9) {
 }
 
 .img-pop-wrap > .img-pop > .box05 {
-    background-image: url(../img/visual-05-coffee.jpg);
+    background-image: url(../img/visual-05-summer.jpg);
 }
 
 .img-pop-wrap > .img-pop > .box06 {
@@ -1113,41 +1080,7 @@ svg text:nth-child(9) {
     background-image: url(../img/visual-08-c4d.jpg);
 }
 
-/*img-pop slider*/
-/*
-.swiper-container.imgSwiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    width: 100%;
-    height: 100%;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.img-pop-wrap > .img-pop > .swiper-container > .swiper-wrapper > .swiper-slide > img {
-    width: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-*/
-
-
-/*----------------------------------#section5 .contact-page------------------------------------------------- */
+/*=====================================#section5 .contact-page=============================================*/
 
 .contact-page {
     position: relative;
@@ -1192,7 +1125,6 @@ svg text:nth-child(9) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
 }
 
 .contact-page > .contents > .input-wrap > input {
@@ -1296,7 +1228,7 @@ svg text:nth-child(9) {
 
 /*wave02 svg 끝*/
 
-/*---------------------------------------#section6 footer--------------------------------------------------- */
+/*==========================================#section6 footer==================================================*/
 
 footer {
     width: 100%;
@@ -1319,34 +1251,32 @@ footer > .icon-wrap > ul {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-footer > .icon-wrap > ul > .phone {
+footer > .icon-wrap > ul > li:first-child {    
     width: 40px;
     height: 40px;
     margin-right: 15px;
-    background-image: url(../img/phone.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
+}
+
+footer > .icon-wrap > ul > .phone {
+    background-image: url(../img/phone.png);
 }
 
 footer > .icon-wrap > ul > .mail {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
     background-image: url(../img/e-mail.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
 }
 
 footer > p {
+    padding: 5px;
     font-size: 13px;
     font-weight: 300;
     text-align: center;
-    padding: 5px;
 }
 
-/*fullpage 버튼 디자인*/
+/*==========================================fullpage 버튼 디자인==================================================*/
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     border-radius: 50%;
@@ -1389,19 +1319,19 @@ footer > p {
 
 
 
-/*---------------------------------------------반응형 시작--------------------------------------------------- */
-
+/*==========================================지금부터는 반응형입니다.==================================================*/
+/*================================================반응형 시작=======================================================*/
 
 
 @media screen and (max-width: 1720px) {
-
-
+    
+    /*=====#section0 .main-visual=====*/
+    
     .wave {
         width: 400%;
     }
 
-
-    /*sec01*/
+    /*=====#section1 .info-page=====*/
 
     .info-page > .contents > .pic-wrap > .img {
         width: 700px;
@@ -1411,14 +1341,12 @@ footer > p {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
-
-
+    
 }
 
 @media screen and (max-width: 1580px) {
 
-    /*sec05*/
+    /*=====#section5 .contact-page=====*/
 
     .contact-page > .contents > h1 {
         margin-bottom: 40px;
@@ -1440,14 +1368,11 @@ footer > p {
         height: 250px;
     }
 
-
-
 }
-
 
 @media screen and (max-width: 1440px) {
 
-    /*sec01*/
+    /*=====#section1 .info-page=====*/
 
     .info-page > .header > .gnb {
         padding: 0 60px;
@@ -1457,13 +1382,13 @@ footer > p {
         padding: 0 60px;
     }
 
-    /*sec02*/
+    /*=====#section2 .info-page02=====*/
 
     .info-page02 > .contents {
         padding: 60px;
     }
 
-    /*sec03*/
+    /*=====#section3 .portfolio-page=====*/
 
     .portfolio-page > .contents > .swiper-container > .swiper-wrapper > .swiper-slide > .pf-box > .img-box > .macbook {
         width: 600px;
@@ -1494,8 +1419,7 @@ footer > p {
         height: 240px;
     }
 
-
-    /*sec05*/
+    /*=====#section5 .contact-page=====*/
 
     .contact-page > .contents > h1 {
         margin-bottom: 30px;
@@ -1516,12 +1440,20 @@ footer > p {
 
 
 @media screen and (max-width: 1280px) {
+    
+    /*=====#section0 .main-visual=====*/
 
     .wave {
         width: 350%;
     }
+    
+    /*=====#section1 .info-page=====*/
+    
+    .typing01 {
+        font-size: 3.5em;
+    }
 
-    /*sec02*/
+    /*=====#section2 .info-page02=====*/
 
     .info-page02 > .contents > .tp-info {
         display: flex;
@@ -1572,7 +1504,7 @@ footer > p {
         font-family: 'Noto Sans KR', sans-serif;
     }
 
-    /*sec03*/
+    /*=====#section3 .portfolio-page=====*/
 
     .portfolio-page > .contents > .txt-wrap > .txt > .btn-wrap {
         margin-bottom: 60px;
@@ -1582,7 +1514,7 @@ footer > p {
         height: 150px;
     }
 
-    /*sec05*/
+    /*=====#section5 .contact-page=====*/
 
     .wave-wrap02 {
         height: 150px;
@@ -1590,12 +1522,7 @@ footer > p {
 
 }
 
-
 @media screen and (max-width: 960px) {
-    
-    
-    
-    
     
     ::-webkit-scrollbar { 
         width: 10px; /*스크롤바의 너비*/
@@ -1609,6 +1536,8 @@ footer > p {
     ::-webkit-scrollbar-track {
         background-color: #ddd; /*스크롤바 트랙 색상*/
     }
+    
+    /*=====#section0 .main-visual=====*/
 
     header {
         display: block;
@@ -1678,10 +1607,6 @@ footer > p {
         font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
     }
-
-
-
-
 
     .wave {
         width: 450%;
@@ -1788,7 +1713,7 @@ footer > p {
 
     /*title svg 끝*/
 
-    /*sec01*/
+    /*=====#section1 .info-page=====*/
 
     .info-page {
         width: 100%;
@@ -1830,7 +1755,7 @@ footer > p {
         font-size: 3em;
     }
 
-    /*sec02*/
+    /*=====#section2 .info-page02=====*/
 
     #section2 {
         margin: 120px 0;
@@ -1898,10 +1823,14 @@ footer > p {
         align-items: center;
     }
 
-    /*sec03*/
+    /*=====#section3 .portfolio-page=====*/
 
     #section3 {
         margin: 120px 0;
+    }
+    
+    .fp-tableCell {
+        height: 80vh;
     }
 
     .portfolio-page {
@@ -1912,7 +1841,6 @@ footer > p {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
     }
 
     .portfolio-page-mobile > .title {
@@ -2011,7 +1939,7 @@ footer > p {
         background-color: #F5A518;
     }
 
-    /*sec04*/
+    /*=====#section4 .portfolio-page02=====*/
 
     .portfolio-page02 {
         display: none;
@@ -2021,7 +1949,6 @@ footer > p {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
     }
 
     .portfolio-page02-mobile > .title {
@@ -2096,7 +2023,7 @@ footer > p {
     }
 
     .portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide05 {
-        background-image: url(../img/mobile-05-coffee.jpg);
+        background-image: url(../img/mobile-05-summer.jpg);
     }
 
     .portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide06 {
@@ -2132,8 +2059,12 @@ footer > p {
         border-radius: 10px;
         background-color: #F5A518;
     }
+    
+    .img-pop-wrap > .img-pop {
+        width: 95%;
+    }
 
-    /*sec05*/
+    /*=====#section5 .contact-page=====*/
 
     .contact-page > .contents {
         padding: 40px;
@@ -2141,9 +2072,9 @@ footer > p {
 
 }
 
-
-
 @media screen and (max-width: 768px) {
+    
+    /*=====#section0 .main-visual=====*/
 
     header > .mobile-gnb > .mobile-menu > .logo-wrap {
         width: 50px;
@@ -2155,24 +2086,19 @@ footer > p {
         width: 550%;
     }
 
-    .title-wrap {
-        display: none;
-
-    }
-
-    /*sec02*/
+    /*=====#section2 .info-page02=====*/
 
     .info-page02 > .contents > .tp-info > .txt-wrap {
         font-size: 1.2em;
     }
 
-    /*sec03*/
+    /*=====#section3 .portfolio-page=====*/
 
     .portfolio-page-mobile > .contents > .port-wrap {
         height: 400px;
     }
 
-    /*sec05*/
+    /*=====#section5 .contact-page=====*/
 
     .contact-page > .contents > h1 {
         margin-bottom: 30px;
@@ -2196,7 +2122,7 @@ footer > p {
         width: 250%;
     }
 
-    /*sec06*/
+    /*=====#section6 footer=====*/
 
     footer > .icon-wrap {
         display: flex;
@@ -2216,12 +2142,11 @@ footer > p {
     footer > .icon-wrap > ul > .mail {
         display: none;
     }
-
-
 }
 
-
 @media screen and (max-width: 580px) {
+    
+    /*=====#section0 .main-visual=====*/
 
     header > .mobile-gnb > .mobile-menu > .nav-list {
         padding: 0 20px;
@@ -2258,16 +2183,19 @@ footer > p {
     }
 
     /*title svg 끝*/
+    
+    /*=====#section1 .info-page=====*/
 
     .info-page > .contents > .text-wrap {
         padding: 0 20px;
     }
 
     .typing01 {
-        font-size: 2em;
+        font-size: 1.6em;
+        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
     }
 
-    /*sec02*/
+    /*=====#section2 .info-page02=====*/
 
     .mobile-br {
         display: block;
@@ -2297,13 +2225,13 @@ footer > p {
         padding-left: 70px;
     }
 
-    /*sec03*/
+    /*=====#section3 .portfolio-page=====*/
 
     .portfolio-page-mobile > .title {
         padding: 0 20px;
         font-size: 2.5em;
     }
-
+    
     .portfolio-page-mobile > .contents {
         padding: 20px;
     }
@@ -2313,8 +2241,7 @@ footer > p {
         height: 300px;
     }
 
-
-    /*sec04*/
+    /*=====#section4 .portfolio-page02=====*/
 
     .portfolio-page02-mobile > .title {
         font-size: 2.5em;
@@ -2329,7 +2256,7 @@ footer > p {
         height: 500px;
     }
 
-    /*sec05*/
+    /*=====#section5 .contact-page=====*/
 
     .contact-page > .contents {
         padding: 20px;
@@ -2360,10 +2287,11 @@ footer > p {
         border-radius: 10px;
     }
 
-
     .wave02 {
         width: 300%;
     }
+    
+    /*=====#section6 footer=====*/
 
     footer {
         padding: 40px 20px 80px 20px;
@@ -2376,27 +2304,24 @@ footer > p {
     footer > p {
         font-size: 9px;
     }
-
-
-
-
-
+    
 }
 
-
-
 @media screen and (max-width: 400px) {
+    
+    /*=====#section0 .main-visual=====*/
 
     header > .mobile-gnb > .mobile-menu > .nav-list > ul {
         font-size: 13px;
     }
+    
+    /*=====#section1 .info-page=====*/
 
     .typing01 {
-        font-size: 1.4em;
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+        font-size: 1.2em;
     }
 
-    /*sec02*/
+    /*=====#section2 .info-page02=====*/
 
     .info-page02 > .contents {
         padding: 20px;
@@ -2406,28 +2331,22 @@ footer > p {
         font-size: 1.1em;
     }
 
-    /*sec03*/
+    /*=====#section3 .portfolio-page=====*/
 
     .portfolio-page-mobile > .contents > .port-wrap {
         height: 300px;
     }
 
-
-    /*sec04*/
+    /*=====#section4 .portfolio-page02=====*/
 
     .portfolio-page02-mobile > .contents > .port-wrap {
         height: 350px;
     }
 
-    /*sec05*/
+    /*=====#section5 .contact-page=====*/
 
     .wave02 {
         width: 350%;
     }
-
-
-
-
-
 
 }

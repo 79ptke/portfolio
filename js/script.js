@@ -5,17 +5,13 @@ $(document).ready(function () {
         //options here
         responsiveWidth: 961,
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', 'lastPage', 'footer'],
-        // sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['HOME', 'ABOUT ME-01', 'ABOUT ME-02', 'PORTFOLIO-WEB', 'PORTFOLIO-VISUAL', 'CONNACT', 'FOOTER'],
         responsiveWidth: 961,
         afterLoad: function (origin, destination, direction) {
             var loadedSection = this;
-
-            //색인 사용
-
-
+            
             if (destination.index == 2) {
 
                 $(".skill01").addClass("skill");
@@ -31,16 +27,16 @@ $(document).ready(function () {
                 $(".skill04").removeClass("skill3");
                 $(".skill05").removeClass("skill4");
             }
-
+            
         },
 
-
     });
-
-
-
-
-    //타이핑 텍스트 960이하        
+    
+    
+    
+    
+    
+    //타이핑 텍스트
 
     var typingWrap = false;
     var typingIndex = 0;
@@ -92,15 +88,11 @@ $(document).ready(function () {
             }
         }
     }
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
     //웹 포트폴리오 슬라이드
     var swiper = new Swiper(".mySwiper", {
 
@@ -118,41 +110,41 @@ $(document).ready(function () {
             prevEl: ".swiper-button-prev",
         },
     });
-
-
-
-
-
+    
+    
+    
+    
+    
     //포폴 이미지 클릭시    
-    $(".portfolio-page02 > .contents > .main-con > .main-box > .main01").click(function () {
+    $(".portfolio-page02 > .contents > .main-con > .main-box > .main01,.portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide01").click(function () {
         $(".img-pop-wrap").addClass("pop");
         $(".img-pop-wrap > .img-pop > .box01").addClass("pop");
     });
-    $(".portfolio-page02 > .contents > .main-con > .main-box > .main02").click(function () {
+    $(".portfolio-page02 > .contents > .main-con > .main-box > .main02,.portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide02").click(function () {
         $(".img-pop-wrap").addClass("pop");
         $(".img-pop-wrap > .img-pop > .box02").addClass("pop");
     });
-    $(".portfolio-page02 > .contents > .main-con > .main-box > .main03").click(function () {
+    $(".portfolio-page02 > .contents > .main-con > .main-box > .main03,.portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide03").click(function () {
         $(".img-pop-wrap").addClass("pop");
         $(".img-pop-wrap > .img-pop > .box03").addClass("pop");
     });
-    $(".portfolio-page02 > .contents > .main-con > .main-box > .main04").click(function () {
+    $(".portfolio-page02 > .contents > .main-con > .main-box > .main04,.portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide04").click(function () {
         $(".img-pop-wrap").addClass("pop");
         $(".img-pop-wrap > .img-pop > .box04").addClass("pop");
     });
-    $(".portfolio-page02 > .contents > .main-con > .main-box > .main05").click(function () {
+    $(".portfolio-page02 > .contents > .main-con > .main-box > .main05,.portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide05").click(function () {
         $(".img-pop-wrap").addClass("pop");
         $(".img-pop-wrap > .img-pop > .box05").addClass("pop");
     });
-    $(".portfolio-page02 > .contents > .main-con > .main-box > .main06").click(function () {
+    $(".portfolio-page02 > .contents > .main-con > .main-box > .main06,.portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide06").click(function () {
         $(".img-pop-wrap").addClass("pop");
         $(".img-pop-wrap > .img-pop > .box06").addClass("pop");
     });
-    $(".portfolio-page02 > .contents > .main-con > .main-box > .main07").click(function () {
+    $(".portfolio-page02 > .contents > .main-con > .main-box > .main07,.portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide07").click(function () {
         $(".img-pop-wrap").addClass("pop");
         $(".img-pop-wrap > .img-pop > .box07").addClass("pop");
     });
-    $(".portfolio-page02 > .contents > .main-con > .main-box > .main08").click(function () {
+    $(".portfolio-page02 > .contents > .main-con > .main-box > .main08,.portfolio-page02-mobile > .contents > .port-wrap > .port > .portfolio > .swiper-wrapper > .slide08").click(function () {
         $(".img-pop-wrap").addClass("pop");
         $(".img-pop-wrap > .img-pop > .box08").addClass("pop");
     });
@@ -165,12 +157,11 @@ $(document).ready(function () {
         $(".img-pop-wrap > .img-pop > .img-box").removeClass("pop");
 
     });
-
-
-
-
-
-
+    
+    
+    
+    
+    
     //960시 웹 포트폴리오 슬라이드
     var swiper = new Swiper(".web-portfolio", {
 
@@ -186,11 +177,12 @@ $(document).ready(function () {
             clickable: true,
         },
 
-
-
     });
-
-
+    
+    
+    
+    
+    
     //960시 시각 포트폴리오 슬라이드
     var swiper = new Swiper(".portfolio", {
 
@@ -206,28 +198,18 @@ $(document).ready(function () {
             clickable: true,
         },
 
-
-
     });
-
-
-
-
+    
+    
+    
+    
+    
     //모바일 메뉴 토글
 
     $("header > .mobile-gnb").click(function () {
+        
         $("header > .mobile-gnb").toggleClass("active");
 
-
-
     });
-
-
-
-
-
-
-
-
 
 });
